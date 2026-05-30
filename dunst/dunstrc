@@ -1,0 +1,22 @@
+[global]
+  width = 350
+  height = (0, 300)
+  origin = top-right
+  offset = (20, 20)
+
+  notification_limit = 5
+  gap_size = 12
+  padding = 12
+  horizontal_padding = 20
+  sort = no
+
+  corner_radius = 5
+
+  # Colors
+  background = "#282a36"
+  foreground = "#f8f8f2"
+  frame_color = "#bd93f9"
+  frame_width = 2
+
+  # Text
+  font = JetBrains Mono Nerd Font 12

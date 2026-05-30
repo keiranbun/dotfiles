@@ -1,0 +1,63 @@
+/* 
+███████╗████████╗██╗   ██╗██╗     ███████╗
+██╔════╝╚══██╔══╝╚██╗ ██╔╝██║     ██╔════╝
+███████╗   ██║    ╚████╔╝ ██║     █████╗  
+╚════██║   ██║     ╚██╔╝  ██║     ██╔══╝  
+███████║   ██║      ██║   ███████╗███████╗
+╚══════╝   ╚═╝      ╚═╝   ╚══════╝╚══════╝
+*/
+
+* {
+  border: none;
+  font-family: "Fira Code", "Symbols Nerd Font Mono";
+  /* font-family: "Jetbrains Mono Nerd Font", "Symbols Nerd Font Mono"; */
+  font-size: 16px;
+  font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+  min-height: 25px;
+}
+
+window#waybar {
+  background: #1b1b1b;
+  /* border-radius: 5px; */
+}
+
+#custom-arch,
+#clock,
+#custom-power {
+  color: #aa6bbd;
+}
+
+#custom-arch {
+  font-size: 22px;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+#clock {
+  background-color: #1b1b1b;
+}
+
+#pulseaudio {
+  color: #fff;
+}
+
+#tray {
+  margin-right: 10px;
+}
+
+/* WORKSPACES */
+#workspaces button {
+  color: #fff;
+  min-width: 0;
+}
+
+#workspaces button:hover {
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: inherit;
+  border-radius: 5px;
+}
+
+#workspaces button.active {
+  background: rgba(170, 107, 189, 0.2);
+  border-radius: 5px;
+}

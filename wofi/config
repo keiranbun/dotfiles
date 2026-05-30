@@ -1,0 +1,7 @@
+mode = drun
+allow_images=true
+no_actions=true
+prompt=search
+image_size=28
+width=600
+height=350
