@@ -3,7 +3,7 @@
 ------------------
 
 terminal = "kitty"
-browser = "brave"
-browserPrivate = "brave --incognito"
+browser = "firefox"
+browserPrivate = "firefox -private-window"
 fileManager = "thunar"
 menu = "wofi"
