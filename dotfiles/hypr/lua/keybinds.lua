@@ -34,7 +34,7 @@ hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 -- other
 hl.bind(mainMod .. " + S",
     hl.dsp.exec_cmd(
-        'sh -c \'grim -g "$(slurp)" "$HOME/Pictures/screenshot/$(date +%Y-%m-%d_%H-%M-%S-%3N).png"\''
+        'sh -c \'grim -g "$(slurp)" "$HOME/pictures/screenshot/$(date +%Y-%m-%d_%H-%M-%S-%3N).png"\''
     )
 )
 
