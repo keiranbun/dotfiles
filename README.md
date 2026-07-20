@@ -11,6 +11,10 @@
 - `cd dotfiles`
 - `sudo chmod +x ./install.sh`
 
+#### Adwaita Folder Colors
+
+- [link](https://github.com/dpejoh/Adwaita-colors)
+
 ## Printer (CUPS)
 
 - `http://localhost:631`

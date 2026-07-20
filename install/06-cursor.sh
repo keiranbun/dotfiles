@@ -8,7 +8,7 @@ cursor --install-extension bradlc.vscode-tailwindcss
 cursor --install-extension pkief.material-icon-theme
 cursor --install-extension github.github-vscode-theme
 cursor --install-extension wayou.vscode-todo-highlight
-cursor  --install-extension esbenp.prettier-vscode@11.0.3 # specific version since cursor has a linting issue with newest
+cursor  --install-extension esbenp.prettier-vscode
 cursor --install-extensions typescriptteam.native-preview
 cursor --install-extension streetsidesoftware.code-spell-checker
 
@@ -16,4 +16,4 @@ cursor --install-extension streetsidesoftware.code-spell-checker
 cp config/cursor/keybindings.json ~/.config/Cursor/User
 cp config/cursor/settings.json ~/.config/Cursor/User
 
-echo -e "\nInstalled: Visual Studio Code + Extensions"
+echo -e "\nInstalled: Cursor + Extensions"

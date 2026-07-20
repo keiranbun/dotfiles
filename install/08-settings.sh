@@ -8,7 +8,6 @@ cp -r "$DOTFILES_ROOT/dotfiles/"* ~/.config
 
 echo -e "\nInstalled: Dotfiles"
 
-
 # -----------------------------------------------------------------
 # Install Thunar fix
 
