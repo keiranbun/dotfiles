@@ -13,7 +13,7 @@
 
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["tray", "pulseaudio", "custom/arch"],
+    "modules-right": ["tray", "network", "pulseaudio", "custom/arch"],
 
     "custom/arch": {
       "format": " ",
@@ -55,6 +55,15 @@
       },
     },
 
+    "network": {
+      "format-wifi": "{icon}",
+      "format-ethernet": " {ifname}",
+      "format-disconnected": "󰤮",
+      "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+      "tooltip-format": "{essid} · {signalStrength}% · {ipaddr}",
+      "tooltip-format-disconnected": "Disconnected",
+      "on-click": "nm-connection-editor",
+    },
     "pulseaudio": {
       "format": "{icon} {volume:2}%",
       "format-bluetooth": "{icon} {volume}% ",
