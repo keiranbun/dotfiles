@@ -20,12 +20,13 @@ hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(browserPrivate))
 hl.bind(mainMod .. " + X", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + C", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + Z", hl.dsp.layout("togglesplit"))
+hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ action = "toggle" }))
 
--- focus movement
-hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
-hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
-hl.bind(mainMod .. " + up",    hl.dsp.focus({ direction = "up" }))
-hl.bind(mainMod .. " + down",  hl.dsp.focus({ direction = "down" }))
+-- focus movement (Vim motions)
+hl.bind(mainMod .. " + h", hl.dsp.focus({ direction = "left" }))
+hl.bind(mainMod .. " + l", hl.dsp.focus({ direction = "right" }))
+hl.bind(mainMod .. " + k", hl.dsp.focus({ direction = "up" }))
+hl.bind(mainMod .. " + j", hl.dsp.focus({ direction = "down" }))
 
 -- mouse move/resize
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })
@@ -100,6 +101,12 @@ hl.bind("XF86AudioNext",  hl.dsp.exec_cmd("playerctl next"),       { locked = tr
 hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = true })
+
+-- mac binds
+hl.bind("SUPER + BackSpace", hl.dsp.send_shortcut({ mods = "CTRL", key = "BackSpace" }))
+hl.bind("SUPER + Left", hl.dsp.send_shortcut({ mods = "CTRL", key = "Left" }))
+hl.bind("SUPER + Right", hl.dsp.send_shortcut({ mods = "CTRL", key = "Right" }))
+
 
 ----------------------------------------------------------------------------------------
 -- special workspace
