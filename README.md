@@ -45,6 +45,11 @@
 - `sudo pacman -Sc` - Clear cached packages from previous installations, keeping only those currently installed.
 - `rm -rf ~/.cache` - Delete user cache files to free up disk space.
 
+**pacman bug**
+
+- Sometimes when a download is interrupted the **download-xxxxx** temp dir is orphaned. **Must be removed manually**
+  - `sudo find /var/cache/pacman/pkg -maxdepth 1 -type d -name 'download-*' -delete`
+
 #### .snapshots
 
 - The default `archinstall` setup uses Snapper to create automatic snapshots after each update, which can quickly consume significant disk space.
